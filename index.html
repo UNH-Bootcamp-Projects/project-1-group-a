@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner from a Movie</title>
+
+    <!--favicon credit: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/movie.png">
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--google font Rammetto and Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!--Foundations CSS Framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+     <!--standard css stylesheet-->
+     <link rel="stylesheet" href="./assets/css/styles.css">
+   
+</head>
+
+
+<body>
+    <!--curtain image for page background is free to use, background Photo by cottonbro from Pexels; see css and images folder-->
+    
+    <header>
+        <h1>Dinner from a Movie</h1>
+        <p>Select a <u>movie</u> <u>title</u> and enjoy a related <u>meal</u> for a full immersion experience!</p>
+
+    </header>
+
+  
+
+<div class= "container">
+
+          <!-- Dropdown menu to select movie name from list (list of movie names to be obtained from Babish Culinary Universe); Foundations code for dropdown menu can be found at... https://get.foundation/sites/docs/dropdown-menu.html -->
+          <div class="menu">
+            <p>placeholder for movie menu selection/dropdown</p>
+         
+           </div>
+
+        <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
+        <div class="responsive-embed">
+            <iframe id= "youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4" frameborder="2"></iframe>
+            
+        </div>
+
+        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
+        <div class="responsive-embed">
+            <iframe id= "wiki" width="420" height="315" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="2"
+                allowfullscreen></iframe>
+        </div>
+
+        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
+        <div class="responsive-embed">
+            <iframe id= "imdb" width="420" height="315" src="https://www.imdb.com/" frameborder="2" allowfullscreen></iframe>
+        </div>
+
+
+        <!--Compressed JavaScript CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->  
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+            integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script> 
+ </div>
+             
+
+</body>
+
+</html>

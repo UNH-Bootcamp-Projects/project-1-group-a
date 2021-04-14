@@ -1,0 +1,51 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(58, 4, 4); 
+
+
+    /*background-image: url("./assets/images/curtain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.container {
+    background-color: transparent;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+header h1 {
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 4rem;
+    color:antiquewhite;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    color:antiquewhite;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+
+.menu {
+    margin-bottom: 2%;
+    font-size: 1rem;
+    color:antiquewhite;
+}
+
+
+.responsive-embed {
+    margin-bottom: 5%;
+}
