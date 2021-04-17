@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinner from a Movie</title>
- <!--favicon credit: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" -->
+    <!--favicon credit: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" -->
     <link rel="shortcut icon" type="image/png" href="assets/images/movie.png">
 
-    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -17,20 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto&display=swap" rel="stylesheet">
 
-
     <!--Foundations CSS Framework-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html -->
+    Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
     <!--standard css stylesheet-->
     <link rel="stylesheet" href="./assets/css/styles.css">
- 
-</head>
-
+ </head>
 
 <body>
     <!--curtain image for page background is free to use, background Photo by cottonbro from Pexels; see css and images folder-->
@@ -38,77 +34,24 @@
         <header>
             <h1>Dinner from a Movie</h1>
             <p>Select a <u>movie</u> <u>title</u> and enjoy a related <u>meal</u> for a full immersion experience!</p>
-            
-           
-            ​
-        
-            
-            <!-- CUSTOM SELECT menu to select movie name from list (list of movie names to be obtained from Babish Culinary
-         Universe); https://www.w3schools.com/howto/howto_custom_select.asp 
-         <div class="custom-select" style="width:200px;">
-            <select>
-                <option value="0">Select Movie</option>
-                <option value="1">Movie</option>
-                <option value="2">Movie</option>
-                <option value="3">Movie</option>
-                <option value="4">Movie</option>
-                <option value="5">Movie</option>
-                <option value="6">Movie</option>
-                <option value="7">Movie</option>
-                <option value="8">Movie</option>
-                <option value="9">Movie</option>
-                <option value="10">Movie</option>
-                <option value="11">Movie</option>
-                <option value="12">Movie</option>
-            </select>
-        </div> -->
-            <!-- <div class="dropdown">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a href="#">Item 1</a>
-                     
-                    </li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                </ul>
-            </div>
-
-        </header>
-    </div> -->
-
-
     <div class="container">
-     
-        ​    <input type="text" list="movies" style="width: 80%; padding: 3rem; font-size: 2rem">
+        <input type="text" list="movies" style="width: 80%; padding: 3rem; font-size: 2rem">
             <datalist id="movies">
               <option value="The Hook">The Hook</option>
               <option value="Freaky Friday">Freaky Friday</option>
             </datalist>
-           
-   
-
-
-
+    
         <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
         <div class="responsive-embed">
             <iframe id="wiki" width="420" height="315" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="2"
                 allowfullscreen></iframe>
         </div>
-
-
+        
         <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
         <div class="responsive-embed">
             <iframe id="youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4"
                 frameborder="2"></iframe>
 
-        </div>
-
-
-        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
-        <div class="responsive-embed">
-            <iframe id="imdb" width="420" height="315" src="https://www.imdb.com/" frameborder="2"
-                allowfullscreen></iframe>
         </div>
 
     </div>

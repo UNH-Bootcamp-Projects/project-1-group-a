@@ -1,14 +1,7 @@
 
 document.querySelector('input').addEventListener('change', (event) => {
-  
-​
   console.log(event.currentTarget.value) // movie
 })
-
-
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
-document.addEventListener("click", closeAllSelect);
 //End of the JS for the menu select button
 let youtubeKey = "AIzaSyB3LQ9556IHF2Cvci2B9S6FKyRVtMWlxa0"
 let playlistID = "PLopY4n17t8RDnEJnNXSwUbhvs4wNLpMe5"
