@@ -3,6 +3,11 @@ let playlistID = "PLopY4n17t8RDnEJnNXSwUbhvs4wNLpMe5"
 let youtubeAPI = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=" + playlistID + "&key=" + youtubeKey;
 let titlesArray = []
 let movies = []
+
+document.querySelector('input').addEventListener('change', (event) => {
+  // console.log(event.currentTarget.value) // movie
+})
+
 fetch(youtubeAPI) 
   .then(function(response) {
     return response.json()
@@ -21,18 +26,22 @@ fetch(youtubeAPI)
           videoId: data.items[i].snippet.resourceId.videoId,
         })
       } else {
-        console.log(title)
+        // console.log(title)
       }
     }
-    console.log(movies)
+    // console.log(movies)
   })
 
 
-
-  let movieAPI = "https://https://api.themoviedb.org/3/movie/550?api_key=" + movieKey
   let movieKey = "f420df924b19579fea697bc51f4a457d"
-
-  // movie api
+  let movieAPI = "https://https://api.themoviedb.org/3/search/Hook/?api_key=" + movieKey
+  fetch (movieAPI) 
+    .then (function(response) {
+    return response.json()
+    })
+    .then (function(data) {
+    console.log(data)
+    })
   // release date
   // title
   // overview
