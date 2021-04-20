@@ -71,14 +71,16 @@ The team used the following tools to create Reciflixor:
 * CSS
 * Foundations CSS Framework
 * JavaScript
-* APIs
 * Google Fonts
 * GitHub
+* Server-side APIs
+
+
 
 # Processes Followed
 
-* Agile
-* Git version control
+* Git branching workflow
+* Agile software development
 * Git issues and Kanban for managing project work
 * Informal scrum meeting before working sessions
 
