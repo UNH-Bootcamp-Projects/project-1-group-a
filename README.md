@@ -1,4 +1,4 @@
-# project-1-group-a 
+# project-1-group-a
 
 ## Project Team Members
 
@@ -100,3 +100,4 @@ https://UNH-Bootcamp-Projects.github.io/project-1-group-a/
 
 The URL of the GitHub repository that contains the code can be found here:
 https://github.com/UNH-Bootcamp-Projects/project-1-group-a
+
