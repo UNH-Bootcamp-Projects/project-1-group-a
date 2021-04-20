@@ -20,33 +20,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html
+    <!--Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
     <!--standard css stylesheet-->
     <link rel="stylesheet" href="./assets/css/styles.css">
- </head>
+</head>
 
 <body>
-    <!--curtain image for page background is free to use, background Photo by cottonbro from Pexels; see css and images folder-->
+    <!--title and subtitle-->
     <div class="hero">
         <header>
             <h1>Dinner from a Movie</h1>
             <p>Select a <u>movie</u> <u>title</u> and enjoy a related <u>meal</u> for a full immersion experience!</p>
+        </header>
+    </div>
+
+
     <div class="container">
-        <input type="text" list="movies" style="width: 80%; padding: 3rem; font-size: 2rem">
-            <datalist id="movies">
-              <option value="The Hook">The Hook</option>
-              <option value="Freaky Friday">Freaky Friday</option>
-            </datalist>
-    
-        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
-        <div class="responsive-embed">
-            <iframe id="wiki" width="420" height="315" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="2"
-                allowfullscreen></iframe>
+        <!--brief overview on how to use the site-->
+        <p class="overview">Select a <u>movie</u> <u>title</u> from the menu to get details about the movie and enjoy a related <u>meal</u> for a full immersion experience!</p>
+
+​
+        <!--movie selection dropbox-->
+        <input type="text" list="movies" class="box">
+        <datalist id="movies" class="dropdown">
+            <option value="The Hook">The Hook</option>
+            <option value="Freaky Friday">Freaky Friday</option>
+        </datalist>
+
+        <!--API for movie information: Title, Overview, Rating, OtherTBD-->
+        <div class="row">
+            <div class="column">
+                <h4 id="movieTitle">Movie Title Placeholder</h4>
+
+                <p><u>Overview:</u></p>
+                <p id="movieOverview">this is a placeholder for api movie overview content</p>
+
+                <p><u>Rating:</u></p>
+                <p id="movieRating">rating placeholder</p>
+
+                <p><u>Other:</u></p>
+                <p id="tbd">placeholder</p>
+            </div>
+            <div class="column">
+
+
+                <!--API movie poster, remove placeholder info-->
+                <img id="moviePoster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
+            </div>
         </div>
-        
+
         <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
         <div class="responsive-embed">
             <iframe id="youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4"
@@ -54,17 +79,55 @@
 
         </div>
 
+        <!--Providers section using Foundations classes-->
+        <div class="providersContainer">
+            <h4>Watch Providers</h4>
+            <p>Stream from these providers:</p>
+            <div class="grid-x grid-padding-x align-center-middle text-center providers">
+                <div class="cell medium-8">Placeholders for Providers / Insert ICONS w/links</div>
+            </div>
+        </div>
+
+
+        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html 
+        <div class="responsive-embed">
+            <iframe id="wiki" width="420" height="315" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="2"
+                allowfullscreen></iframe>
+        </div>-->
+
+      
+        <!--Alternative display of api movie information formatted with Foundations card (https://get.foundation/sites/docs/card.html)
+        <div class="card" style="width: 300px;">
+            <div class="card-divider">
+                <h4 id="movieTitle">Movie Title</h4>
+            </div>
+            <img id="moviePoster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
+            <div class="card-section">
+
+                <p><u>Overview:</u></p>
+                <p id="movieOverview">this is a placeholder for api movie overview content</p>
+
+                <p><u>Rating:</u></p>
+                <p id="movieRating">rating placeholder</p>
+
+                <p><u>Other Data?</u></p>
+                <p id="tbd">placeholder for other data</p>
+
+            </div>
+        </div>-->
+
+
+
     </div>
 
-     <!--javascript-->
-     <script src="assets/js/main.js"></script>
+    <!--javascript-->
+    <script src="assets/js/main.js"></script>
 
     <!--Compressed JavaScript CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
         integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
 
-   
 
 </body>
 
