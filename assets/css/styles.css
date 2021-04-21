@@ -92,7 +92,7 @@ hr.rounded {
   /* styling for the inner provider section - icon & links area */
   .providers {
     background-color: antiquewhite;
-    height: 100px;
+    height: auto;
     margin-bottom: 2%;
     color: black;
     padding-left: 2%;
