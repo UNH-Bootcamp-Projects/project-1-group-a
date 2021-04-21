@@ -127,3 +127,6 @@ header p {
     color: antiquewhite;
   }
  
+  .hidden {
+      display: none;
+  }
