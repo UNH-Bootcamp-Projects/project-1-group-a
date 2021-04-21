@@ -43,13 +43,15 @@
         <p class="overview">Select a <u>movie</u> <u>title</u> from the menu to get details about the movie and enjoy a related <u>meal</u> for a full immersion experience!</p>
 
 ​
-        <!--movie selection dropbox-->
-        <input type="text" list="movies" class="box">
+        <!--movie selection dropbox--> 
+                <input type="text" list="movies" class="box" placeholder="Pick a flix!">
         <datalist id="movies" class="dropdown">
             <option value="The Hook">The Hook</option>
             <option value="Freaky Friday">Freaky Friday</option>
         </datalist>
 
+       <!--see popcorn.png for image Popcorn Icon credit: "https://www.freepik.com" -->
+       
         <!--API for movie information: Title, Overview, Rating, OtherTBD-->
         <div class="row">
             <div class="column">
@@ -70,10 +72,11 @@
                 <!--API movie poster, remove placeholder info-->
                 <img id="moviePoster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
             </div>
+           
         </div>
-
+        <hr class="rounded">
         <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
-        <!-- <div class="responsive-embed">
+         <div class="responsive-embed">
             <iframe id="youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4"
                 frameborder="2"></iframe>
 
@@ -127,7 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
         integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
-
+    <script src="https://kit.fontawesome.com/261abec218.js" crossorigin="anonymous"></script>
 
 </body>
 
