@@ -38,39 +38,38 @@
     </div>
 
 
-    <div class="container">
-        <!--brief overview on how to use the site-->
-        <p class="overview">Select a <u>movie</u> <u>title</u> from the menu to get details about the movie and enjoy a related <u>meal</u> for a full immersion experience!</p>
+    
+    <!--brief overview on how to use the site-->
+    <p class="overview">Select a <u>movie</u> <u>title</u> from the menu to get details about the movie and enjoy a
+        related <u>meal</u> for a full immersion experience!</p>
 
-​
+​    
         <!--movie selection dropbox--> 
                 <input type="text" list="movies" class="box" placeholder="Pick a flix!">
-        <datalist id="movies" class="dropdown">
-            <option value="The Hook">The Hook</option>
-            <option value="Freaky Friday">Freaky Friday</option>
-        </datalist>
+        <datalist id="movies" class="dropdown"></datalist>
 
        <!--see popcorn.png for image Popcorn Icon credit: "https://www.freepik.com" -->
-       
+    <div class="container hidden"> 
         <!--API for movie information: Title, Overview, Rating, OtherTBD-->
         <div class="row">
             <div class="column">
-                <h4 id="movieTitle">Movie Title Placeholder</h4>
+                <h4 id="movie-title">Movie Title Placeholder</h4>
 
                 <p><u>Overview:</u></p>
-                <p id="movieOverview">this is a placeholder for api movie overview content</p>
+                <p id="movie-overview">this is a placeholder for api movie overview content</p>
 
                 <p><u>Rating:</u></p>
-                <p id="movieRating">rating placeholder</p>
+                <p id="movie-rating"></p>
 
-                <p><u>Other:</u></p>
-                <p id="tbd">placeholder</p>
+                <p><u>release date:</u></p>
+                <p id="release-date">placeholder</p>
+
             </div>
             <div class="column">
 
 
                 <!--API movie poster, remove placeholder info-->
-                <img id="moviePoster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
+                <img id="movie-poster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
             </div>
            
         </div>
@@ -82,7 +81,7 @@
 
         </div>
 
-        <!--Providers section using Foundations classes-->
+        -Providers section using Foundations classes-->
         <div class="providersContainer">
             <h4>Watch Providers</h4>
             <p>Stream from these providers:</p>
@@ -90,37 +89,6 @@
                 <div class="cell medium-8">Placeholders for Providers / Insert ICONS w/links</div>
             </div>
         </div>
-
-
-        <!--IMDB (OR) Wikipedia display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html 
-        <div class="responsive-embed">
-            <iframe id="wiki" width="420" height="315" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="2"
-                allowfullscreen></iframe>
-        </div>-->
-
-      
-        <!--Alternative display of api movie information formatted with Foundations card (https://get.foundation/sites/docs/card.html)
-        <div class="card" style="width: 300px;">
-            <div class="card-divider">
-                <h4 id="movieTitle">Movie Title</h4>
-            </div>
-            <img id="moviePoster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
-            <div class="card-section">
-
-                <p><u>Overview:</u></p>
-                <p id="movieOverview">this is a placeholder for api movie overview content</p>
-
-                <p><u>Rating:</u></p>
-                <p id="movieRating">rating placeholder</p>
-
-                <p><u>Other Data?</u></p>
-                <p id="tbd">placeholder for other data</p>
-
-            </div>
-        </div>-->
-
-
-
     </div>
 
     <!--javascript-->

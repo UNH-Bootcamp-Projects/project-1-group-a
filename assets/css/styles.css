@@ -136,3 +136,6 @@ hr.rounded {
     color: antiquewhite;
   }
  
+  .hidden {
+      display: none;
+  }
