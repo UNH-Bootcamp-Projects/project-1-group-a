@@ -10,7 +10,7 @@ Reciflixor: Eat It, Live It!
 
 ## Description
 
-Reciflixor is an application where movie lovers can select a movie and enjoy a recipe from that movie to experience the world the directors created.Reciflixor is a movie immersion experience! 
+Reciflixor is an application where movie lovers can select a movie and enjoy a recipe from that movie to experience the world the directors created. Reciflixor is a movie immersion experience! 
 
 ## APIs 
 
@@ -87,7 +87,7 @@ The team used the following tools to create Reciflixor:
 
 The following image shows the key features of Reciflixor.
 
-![A movie lover visits Reciflixor](assets/images/reciflexor.jpg)
+![A movie lover visits Reciflixor](assets/images/reciflixor.jpg)
 
 
 ## Section- URL to Deployed Application

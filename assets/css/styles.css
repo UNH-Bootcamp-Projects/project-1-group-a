@@ -14,12 +14,14 @@ body {
 
 /* styling for the header section containing heading and subheading */
 .hero {
-  background-color: black;
+  background-image: url('../images/hero-image.png');
+  background-size: cover;
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 1%;
   margin-bottom: 2%;
 }
+
 
 /* styling for the page heading and subheading */
 header h1 {
@@ -51,7 +53,7 @@ header p {
 /*styling for the movie selection box */
 .box {
     background-color: antiquewhite;
-    width: 50%; 
+    width: 100%; 
     padding: 1.5rem; 
     font-size: 1.5rem;
     line-height: 2rem;
@@ -63,6 +65,13 @@ header p {
     padding: 1rem; 
     font-size: 1rem;
 }
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid antiquewhite;
+    border-radius: 5px;
+    margin-top: 2%;
+  }
 
 /*styling movie details/poster card */
  .card {
