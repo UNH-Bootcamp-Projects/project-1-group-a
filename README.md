@@ -16,9 +16,10 @@ Reciflixor is an application where movie lovers can select a movie and enjoy a r
 
 Reciflixor was created with the following APIs:
 
-[PUT NAME OF API HERE](https://link-to-api-goes-here) was the API used to retrieve movie details. 
-[PUT NAME OF API HERE](https://link-to-api-goes-here) was the API used to retrieve the YouTube video. 
-[PUT NAME OF API HERE](https://link-to-api-goes-here) was the API used to retrieve the streaming provider options. 
+[The Movie DB](https://api.themoviedb.org) was the API used to retrieve movie details. 
+[YouTube](https://developers.google.com/youtube/v3) was the API used to retrieve the YouTube video. 
+[TMDB](https://developers.themoviedb.org) was the API used to retrieve the movie poster. 
+[NAME HERE](https://enterHERE.org) was the API used to retrieve the streaming provider options. 
 
 ## User stories
 
@@ -74,6 +75,7 @@ The team used the following tools to create Reciflixor:
 * Google Fonts
 * GitHub
 * Server-side APIs
+* Slack
 
 
 ## Processes Followed

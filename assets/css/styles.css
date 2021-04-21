@@ -1,9 +1,6 @@
 body {
-   /* margin-left: 20%;
-    margin-right: 20%; */
     font-family: 'Roboto', sans-serif;
     background-color: rgb(58, 4, 4); 
-
 }
 
 .container {
@@ -23,7 +20,7 @@ body {
 }
 
 
-/* styling for the page heading and subheading */
+/* styling for the page heading (Reciflixor) and subheading statement */
 header h1 {
     font-family: 'Rammetto One', cursive;
     text-align: center;
@@ -44,16 +41,25 @@ header p {
     margin-bottom: 2%;
 }
 
+/*styling for the div that holds the site overview statement AND the movie selection box */
+.intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
 /*styling for the site overview statement above the movie selection box */
 .overview {
     color:antiquewhite;
-
+    font-size: 1.5rem;
 }
 
 /*styling for the movie selection box */
 .box {
     background-color: antiquewhite;
-    width: 100%; 
+    width: 90%;
+    margin-left: 5%; 
+    margin-right: 5%;
     padding: 1.5rem; 
     font-size: 1.5rem;
     line-height: 2rem;
@@ -66,29 +72,13 @@ header p {
     font-size: 1rem;
 }
 
-/* Rounded border */
+/* Rounded border - styling for the line beneath the movie details and poster*/
 hr.rounded {
     border-top: 8px solid antiquewhite;
     border-radius: 5px;
     margin-top: 2%;
   }
 
-/*styling movie details/poster card */
- .card {
-    color: antiquewhite;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    padding: 1rem;
-    background-color: rgb(58, 4, 4);
- }
-
- /*styling movie title section of the card */
- .card-divider {
-    color: antiquewhite;
-    padding: .5rem;
-    background-color: rgb(58, 4, 4);
- }
 
  /* styling for the overall provider section */
  .providersContainer {
@@ -100,12 +90,14 @@ hr.rounded {
  }
 
   /* styling for the inner provider section - icon & links area */
- .providers {
-     background-color: antiquewhite;
-     height: 100px;
-     margin-bottom: 2%;
-     color:black;
- }
+  .providers {
+    background-color: antiquewhite;
+    height: 100px;
+    margin-bottom: 2%;
+    color: black;
+    padding-left: 2%;
+    padding-top: 2%;
+}
 
 
  /* styling for the iframes */
@@ -121,21 +113,21 @@ hr.rounded {
   }
   
   .row {
-    display: flex;
     background-color: rgb(58, 4, 4);
     color: antiquewhite;
   }
   
   /* Two equal columns for movie details and poster that sits next to each other */
   .column {
-    flex: 46%;
     margin: 2%;
     padding: 10px;
-    height: auto; 
     background-color: rgb(58, 4, 4);
     color: antiquewhite;
   }
  
+  
+  /*Temporarily commented out for testing purposes
   .hidden {
       display: none;
-  }
+  } */
+ 
