@@ -62,6 +62,8 @@ function getMovie(movieTitle) {
     movieKey +
     "&language=en-US&page=1&include_adult=false&query=" +
     query;
+    // get video id and concat it to the url for embedded yt video
+    $('#youTube').attr("src", "https://www.youtube.com/embed/" + movie.videoId);
   fetch(movieAPI)
     .then(function (response) {
       if (response.ok) {
@@ -69,7 +71,7 @@ function getMovie(movieTitle) {
       }
     })
     .then(function (data) {
-      selectedMovie = data.results[0];
+      let selectedMovie = data.results[0];
       console.log(selectedMovie);
 
       // title
@@ -84,6 +86,7 @@ function getMovie(movieTitle) {
       let movieRating = Math.floor(selectedMovie.vote_average / 2);
       $("#movie-rating").empty();
 
+      // rating
       function ratingSystem(movieRating) {
         for (let i = 0; i < movieRating; i++) {
           $("#movie-rating").append($("<i>").attr("class", "fas fa-star"));
@@ -102,5 +105,8 @@ function getMovie(movieTitle) {
         "src",
         "https://image.tmdb.org/t/p/w500" + selectedMovie.poster_path
       );
+
+      // TODO: add movie title to local storage and append it to a list, allow it to be clickable. When clicked, It should load the movie to the page       
+
     });
 }
