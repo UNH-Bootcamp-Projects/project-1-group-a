@@ -16,10 +16,9 @@ Reciflixor is an application where movie lovers can select a movie and enjoy a r
 
 Reciflixor was created with the following APIs:
 
-* [The Movie DB](https://api.themoviedb.org) was the API used to retrieve movie details. 
-* [YouTube](https://developers.google.com/youtube/v3) was the API used to retrieve the YouTube video. 
-* [TMDB](https://developers.themoviedb.org) was the API used to retrieve the movie poster. 
-* [NAME HERE](https://enterHERE.org) was the API used to retrieve the streaming provider options. 
+* [The Movie Database](https://api.themoviedb.org) was the API used to retrieve all movie details.
+* [YouTube](https://developers.google.com/youtube/v3) was the API used to retrieve the Babish YouTube videos. 
+
 
 ## User stories
 
