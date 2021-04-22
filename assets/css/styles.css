@@ -1,9 +1,6 @@
 body {
-   /* margin-left: 20%;
-    margin-right: 20%; */
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(58, 4, 4); 
-
+    background-color: rgb(58, 4, 4);
 }
 
 .container {
@@ -14,22 +11,22 @@ body {
 
 /* styling for the header section containing heading and subheading */
 .hero {
-  background-image: url('../images/hero-image.png');
-  background-size: cover;
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 1%;
-  margin-bottom: 2%;
+    background-image: url('../images/hero-image.png');
+    background-size: cover;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 
-/* styling for the page heading and subheading */
+/* styling for the page heading (Reciflixor) and subheading statement */
 header h1 {
     font-family: 'Rammetto One', cursive;
     text-align: center;
     font-size: 5rem;
     line-height: 4rem;
-    color:antiquewhite;
+    color: antiquewhite;
     margin-top: 3%;
     margin-bottom: 2%;
 }
@@ -39,22 +36,66 @@ header p {
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;
-    color:antiquewhite;
+    color: antiquewhite;
     margin-top: 1%;
     margin-bottom: 2%;
 }
 
+
+/* styling for SEARCH HISTORY section: main container */
+.historyContainer {
+    color: antiquewhite;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    width: 70%;
+    padding: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+/* styling for the inner SEARCH HISTORY section - area with list of movie titles */
+.history {
+    background-color: antiquewhite;
+    height: auto;
+    margin-bottom: 2%;
+    color: black;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.popcorn {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+/*styling for the div that holds the site overview statement AND the movie selection box */
+.intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
 /*styling for the site overview statement above the movie selection box */
 .overview {
-    color:antiquewhite;
-
+    color: antiquewhite;
+    font-size: 1.5rem;
 }
 
 /*styling for the movie selection box */
 .box {
     background-color: antiquewhite;
-    width: 100%; 
-    padding: 1.5rem; 
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.5rem;
     font-size: 1.5rem;
     line-height: 2rem;
 }
@@ -62,53 +103,40 @@ header p {
 /*styling for the movie dropdown */
 .dropdown {
     background-color: antiquewhite;
-    padding: 1rem; 
+    padding: 1rem;
     font-size: 1rem;
 }
 
-/* Rounded border */
+/* Rounded border - styling for the line beneath the movie details and poster*/
 hr.rounded {
     border-top: 8px solid antiquewhite;
     border-radius: 5px;
     margin-top: 2%;
-  }
+}
 
-/*styling movie details/poster card */
- .card {
+
+/* styling for the overall provider section */
+.providersContainer {
     color: antiquewhite;
     border-style: solid;
     border-width: 5px;
     border-color: black;
     padding: 1rem;
-    background-color: rgb(58, 4, 4);
- }
+}
 
- /*styling movie title section of the card */
- .card-divider {
-    color: antiquewhite;
-    padding: .5rem;
-    background-color: rgb(58, 4, 4);
- }
-
- /* styling for the overall provider section */
- .providersContainer {
-    color: antiquewhite;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    padding: 1rem;
- }
-
-  /* styling for the inner provider section - icon & links area */
- .providers {
-     background-color: antiquewhite;
-     height: 100px;
-     margin-bottom: 2%;
-     color:black;
- }
+/* styling for the inner provider section - icon & links area */
+.providers {
+    background-color: antiquewhite;
+    height: auto;
+    margin-bottom: 2%;
+    color: black;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
 
- /* styling for the iframes */
+/* styling for the iframes */
 .responsive-embed {
     margin-bottom: 5%;
     margin-bottom: 5%;
@@ -118,24 +146,24 @@ hr.rounded {
 /* Styling for movie details and poster (two columns) */
 * {
     box-sizing: border-box;
-  }
-  
-  .row {
-    display: flex;
+}
+
+.row {
     background-color: rgb(58, 4, 4);
     color: antiquewhite;
-  }
-  
-  /* Two equal columns for movie details and poster that sits next to each other */
-  .column {
-    flex: 46%;
+}
+
+/* Two equal columns for movie details and poster that sits next to each other */
+.column {
     margin: 2%;
     padding: 10px;
-    height: auto; 
     background-color: rgb(58, 4, 4);
     color: antiquewhite;
-  }
- 
+}
+
+
+/*Temporarily commented out for testing purposes
   .hidden {
       display: none;
-  }
+  } */
+ 

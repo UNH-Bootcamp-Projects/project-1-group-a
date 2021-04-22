@@ -38,57 +38,87 @@
     </div>
 
 
-    
-    <!--brief overview on how to use the site-->
-    <p class="overview">Select a <u>movie</u> <u>title</u> from the menu to get details about the movie and enjoy a
-        related <u>meal</u> for a full immersion experience!</p>
+    <div class="intro">
+        <!--brief overview on how to use the site-->
+        <p class="overview">Select a <u>movie</u> title from the menu to get details about the movie and enjoy a
+            featured <u>meal</u> for a full immersion experience!</p>
 
-​    
-        <!--movie selection dropbox--> 
-                <input type="text" list="movies" class="box" placeholder="Pick a flix!">
+        ​<!--movie selection dropbox-->
+        <input type="text" list="movies" class="box" placeholder="Pick a flix!">
         <datalist id="movies" class="dropdown"></datalist>
+    </div>
 
-       <!--see popcorn.png for image Popcorn Icon credit: "https://www.freepik.com" -->
-    <div class="container hidden"> 
-        <!--API for movie information: Title, Overview, Rating, OtherTBD-->
-        <div class="row">
-            <div class="column">
-                <h4 id="movie-title">Movie Title Placeholder</h4>
-
-                <p><u>Overview:</u></p>
-                <p id="movie-overview">this is a placeholder for api movie overview content</p>
-
-                <p><u>Rating:</u></p>
-                <p id="movie-rating"></p>
-
-                <p><u>release date:</u></p>
-                <p id="release-date">placeholder</p>
-
+   <!-- This container "landingPage" is for the Search History and initial popcorn image-->
+   <div class="landingPage">
+    <!-- NEW DIV FOR PREVIOUS SEARCH HISTORY, Foundation CSS-->
+        <div class="historyContainer">
+            <h4>Search History</h4>
+            <p>You previously reviewed these titles:</p>
+            <div class="history">
+                <ul class="small-block-grid-3">
+                    <li>previous search history goes here, via JavaScript</li>
+                    <li>previous search history goes here, via JavaScript</li>
+                    <li>previous search history goes here, via JavaScript</li>
+                </ul>
             </div>
-            <div class="column">
-
-
-                <!--API movie poster, remove placeholder info-->
-                <img id="movie-poster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
-            </div>
-           
         </div>
+
+    <!--POPCORN IMAGE: popcorn.jpg credit: Food vector created by macrovector - www.freepik.com -->
+        <div class="popcorn">
+            <!--Popcorn image-->
+            <img id="popcorn" src="assets/images/popcorn.jpg" alt="movie popcorn">
+        </div>
+    </div>  
+
+    
+    <div class="container hidden">
+       
+        <!--API for movie information: Title, Overview, Rating, OtherTBD-->
+        <!-- https://get.foundation/sites/docs/xy-grid.html-->
+        <div class="grid-container row">
+            <div class="grid-x grid-margin-x column">
+                <div class="cell small-6">
+                    <h4 id="movie-title">Movie Title Placeholder</h4>
+
+                    <p><u>Overview:</u></p>
+                    <p id="movie-overview">this is a placeholder for api movie overview content</p>
+
+                    <p><u>Rating:</u></p>
+                    <p id="movie-rating"></p>
+
+                    <p><u>Release Date:</u></p>
+                    <p id="release-date">placeholder</p>
+                </div>
+                <div class="cell small-6">
+                    <!--API movie poster-->
+                    <img id="movie-poster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
+                </div>
+            </div>
+        </div>
+
+
         <hr class="rounded">
         <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
-         <div class="responsive-embed">
+        <div class="responsive-embed">
             <iframe id="youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4"
                 frameborder="2"></iframe>
 
         </div>
 
-        -Providers section using Foundations classes-->
+        <!--NEW Providers section using Foundations grid and classes-->
         <div class="providersContainer">
             <h4>Watch Providers</h4>
             <p>Stream from these providers:</p>
-            <div class="grid-x grid-padding-x align-center-middle text-center providers">
-                <div class="cell medium-8">Placeholders for Providers / Insert ICONS w/links</div>
+            <div class="providers">
+                <ul class="small-block-grid-3">
+                    <li>Streaming provider details go here, via JavaScript</li>
+                    <li>Streaming provider details go here, via JavaScript</li>
+                    <li>Streaming provider details go here, via JavaScript</li>
+                </ul>
             </div>
         </div>
+
+  
     </div>
 
     <!--javascript-->
@@ -103,3 +133,4 @@
 </body>
 
 </html>
+
