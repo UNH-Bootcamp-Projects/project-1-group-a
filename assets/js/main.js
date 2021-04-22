@@ -71,7 +71,7 @@ function getMovie(movieTitle) {
       }
     })
     .then(function (data) {
-      selectedMovie = data.results[0];
+      let selectedMovie = data.results[0];
       console.log(selectedMovie);
 
       // title
@@ -105,5 +105,8 @@ function getMovie(movieTitle) {
         "src",
         "https://image.tmdb.org/t/p/w500" + selectedMovie.poster_path
       );
+
+      // TODO: add movie title to local storage and append it to a list, allow it to be clickable. When clicked, It should load the movie to the page       
+
     });
 }
