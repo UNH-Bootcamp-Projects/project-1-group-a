@@ -1,25 +1,15 @@
-document.querySelector("input").addEventListener("change", (event) => {
-  // console.log(event.currentTarget.value) // movie
-});
-
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
-// document.addEventListener("click", closeAllSelect);
-//End of the JS for the menu select button
 let youtubeKey = "AIzaSyB3LQ9556IHF2Cvci2B9S6FKyRVtMWlxa0";
 let playlistID = "PLopY4n17t8RDnEJnNXSwUbhvs4wNLpMe5";
-let youtubeAPI =
+let youtubeAPI = 
   "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=" +
   playlistID +
   "&key=" +
   youtubeKey;
 let titlesArray = [];
 let movies = [];
+let recentArray = JSON.parse(localStorage.getItem('title')) || [];
 
-document.querySelector("input").addEventListener("change", (event) => {
-  // console.log(event.currentTarget.value) // movie
-});
-
+// query YouTube API 
 fetch(youtubeAPI)
   .then(function (response) {
     return response.json();
@@ -48,12 +38,14 @@ fetch(youtubeAPI)
     }
   });
 
+  // when a movie title is clicked the page reloads with that movies info
 $("input").on("change", (event) => {
   let movieTitle = $(event.currentTarget).val();
   getMovie(movieTitle);
 });
 
 let movieKey = "f420df924b19579fea697bc51f4a457d";
+// loads info of selected movie to the page
 function getMovie(movieTitle) {
   let movie = movies.find((m) => m.movie === movieTitle);
   let query = encodeURIComponent(movieTitle);
@@ -72,20 +64,15 @@ function getMovie(movieTitle) {
     })
     .then(function (data) {
       let selectedMovie = data.results[0];
-      console.log(selectedMovie);
-
       // title
-      console.log(selectedMovie.title);
       $("#movie-title").text(selectedMovie.title);
       // overview
-      console.log(selectedMovie.overview);
       $("#movie-overview").text(selectedMovie.overview);
       // release date
       $("#release-date").text(selectedMovie.release_date);
       // vote average
       let movieRating = Math.floor(selectedMovie.vote_average / 2);
       $("#movie-rating").empty();
-
       // rating
       function ratingSystem(movieRating) {
         for (let i = 0; i < movieRating; i++) {
@@ -96,9 +83,24 @@ function getMovie(movieTitle) {
           $("#movie-rating").append($("<i>").attr("class", "far fa-star"));
         }
       }
+      let id = selectedMovie.id;
+      let watchURL = "https://api.themoviedb.org/3/movie/" + id + "/watch/providers?api_key=" + movieKey + "&language=en-US";
+      fetch(watchURL)
+      .then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+      })
+      .then(function (streamData) {
+        let providers = $('.providers').empty();
+        for (const rent of streamData.results.US.rent) {
+        $('<img>').attr('src', "https://image.tmdb.org/t/p/w45" + rent.logo_path).appendTo(providers);
+        }
+      });
 
       ratingSystem(movieRating);
       $('.hidden').removeClass("hidden");
+      $('.popcorn').addClass("hidden");
 
       // poster
       $("#movie-poster").attr(
@@ -106,7 +108,22 @@ function getMovie(movieTitle) {
         "https://image.tmdb.org/t/p/w500" + selectedMovie.poster_path
       );
 
-      // TODO: add movie title to local storage and append it to a list, allow it to be clickable. When clicked, It should load the movie to the page       
-
+      // add movie title to local storage and append it to a list      
+      if (!recentArray.includes(movieTitle)) {
+        recentArray.push(movieTitle);
+      }
+      localStorage.setItem("title", JSON.stringify(recentArray));
+      printRecent();
     });
 }
+
+// renders recently searched items on the page
+function printRecent() {
+  let history = $('.history ul').empty();
+  for( let title of recentArray) {
+    let recentTitle = $('<li>').text(title);
+    recentTitle.appendTo(history);
+    recentTitle.on('click', () => getMovie(title));
+  }
+}
+printRecent();
