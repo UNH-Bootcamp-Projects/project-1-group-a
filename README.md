@@ -88,7 +88,7 @@ The team used the following tools to create Reciflixor:
 
 The following image shows the key features of Reciflixor.
 
-![A movie lover visits Reciflixor](assets/images/reciflixor.jpg)
+![A movie lover visits Reciflixor](assets/images/reciflixor.png)
 
 
 ## Section- URL to Deployed Application

@@ -20,13 +20,15 @@ fetch(youtubeAPI)
       titlesArray.push(title);
       let parts = title.replace("...", " ").split(" from ");
       if (parts.length > 1) {
-        let movie = parts[parts.length - 1];
-        movies.push({
-          movie,
-          title,
-          item: data.items[i],
-          videoId: data.items[i].snippet.resourceId.videoId,
-        });
+        let movie = parts[parts.length - 1].replace(/Part .*$/, '').trim();
+        if (!movies.find((m) => m.movie === movie)) {
+          movies.push({
+            movie,
+            title,
+            item: data.items[i],
+            videoId: data.items[i].snippet.resourceId.videoId,
+          });
+        }
       }
     }
     for (const movie of movies) {
