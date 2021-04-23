@@ -37,7 +37,6 @@
         </header>
     </div>
 
-
     <div class="intro">
         <!--brief overview on how to use the site-->
         <p class="overview">Select a <u>movie</u> title from the menu to get details about the movie and enjoy a
@@ -51,26 +50,6 @@
    <!-- This container "landingPage" is for the Search History and initial popcorn image-->
    <div class="landingPage">
     <!-- NEW DIV FOR PREVIOUS SEARCH HISTORY, Foundation CSS-->
-        <div class="historyContainer">
-            <h4>Search History</h4>
-            <p>You previously reviewed these titles:</p>
-            <div class="history">
-                <ul class="small-block-grid-3">
-                    <li>previous search history goes here, via JavaScript</li>
-                    <li>previous search history goes here, via JavaScript</li>
-                    <li>previous search history goes here, via JavaScript</li>
-                </ul>
-            </div>
-        </div>
-
-    <!--POPCORN IMAGE: popcorn.jpg credit: Food vector created by macrovector - www.freepik.com -->
-        <div class="popcorn">
-            <!--Popcorn image-->
-            <img id="popcorn" src="assets/images/popcorn.jpg" alt="movie popcorn">
-        </div>
-    </div>  
-
-    
     <div class="container hidden">
        
         <!--API for movie information: Title, Overview, Rating, OtherTBD-->
@@ -78,16 +57,16 @@
         <div class="grid-container row">
             <div class="grid-x grid-margin-x column">
                 <div class="cell small-6">
-                    <h4 id="movie-title">Movie Title Placeholder</h4>
+                    <h4 id="movie-title"></h4>
 
                     <p><u>Overview:</u></p>
-                    <p id="movie-overview">this is a placeholder for api movie overview content</p>
+                    <p id="movie-overview"></p>
 
                     <p><u>Rating:</u></p>
                     <p id="movie-rating"></p>
 
                     <p><u>Release Date:</u></p>
-                    <p id="release-date">placeholder</p>
+                    <p id="release-date"></p>
                 </div>
                 <div class="cell small-6">
                     <!--API movie poster-->
@@ -109,19 +88,21 @@
         <div class="providersContainer">
             <h4>Watch Providers</h4>
             <p>Stream from these providers:</p>
-            <div class="providers">
-                <ul class="small-block-grid-3">
-                    <li>Streaming provider details go here, via JavaScript</li>
-                    <li>Streaming provider details go here, via JavaScript</li>
-                    <li>Streaming provider details go here, via JavaScript</li>
-                </ul>
-            </div>
+            <div class="providers"></div>
         </div>
 
-  
     </div>
 
-    <!--javascript-->
+        <!-- NEW DIV FOR PREVIOUS SEARCH HISTORY, Foundation CSS-->
+        <div class="historyContainer">
+            <h4>Search History</h4>
+            <p>You previously reviewed these titles:</p>
+            <div class="history">
+                <ul class="small-block-grid-3"></ul>
+            </div>
+        </div>
+    
+        <!--javascript-->
     <script src="assets/js/main.js"></script>
 
     <!--Compressed JavaScript CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->
